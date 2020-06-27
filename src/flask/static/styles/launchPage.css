@@ -52,8 +52,8 @@
 .middleCircle{
     border-radius: 50%;
     position: absolute;
-    width: 20vw;
-    height: 20vw;
+    width: 25vw;
+    height: 25vw;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -61,5 +61,12 @@
 }
 
 .headerCurve{
-
+    position: absolute;
+    width: 31vw;
+    height: 11vh;
+    left: 50%;
+    top: 0.2vh;
+    background: #FFFFFF;
+    border-radius: 43px;
+    transform: translate(-50%, -50%) perspective(200px) rotateX(150deg) ;    
 }
