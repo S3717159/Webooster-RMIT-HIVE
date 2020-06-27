@@ -1,0 +1,57 @@
+.centerDiv{
+    position: absolute;
+    width: 90vw;
+    height: 90vh;
+    left: 5vw;
+    top: 5vh;
+}
+
+.accelerationBox{
+    position: absolute;
+    width: 820px;
+    height: 460px;
+    left: 100px;
+    top: 56px;
+    background: #FFCBB0;
+    border-radius: 29px;
+}
+
+.altitudeBox{
+
+    position: absolute;
+    width: 820px;
+    height: 460px;
+    left: 1000px;
+    top: 56px;
+    background: #FFCBB0;
+    border-radius: 29px;
+    
+}
+
+.locationBox{
+    position: absolute;
+    width: 820px;
+    height: 460px;
+    left: 100px;
+    top: 564px;
+    background: #FFCBB0;
+    border-radius: 29px;
+}
+
+.temperatureBox{
+    position: absolute;
+    width: 820px;
+    height: 460px;
+    left: 1000px;
+    top: 564px;
+    background: #FFCBB0;
+    border-radius: 29px;
+}
+
+.middleCircle{
+
+}
+
+.headerCurve{
+
+}
