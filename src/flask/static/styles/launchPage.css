@@ -6,12 +6,13 @@
     top: 5vh;
 }
 
+.centerWrapper{
+    position: relative;
+}
 .accelerationBox{
     position: absolute;
-    width: 820px;
-    height: 460px;
-    left: 100px;
-    top: 56px;
+    width: 42vw;
+    height: 42vh;
     background: #FFCBB0;
     border-radius: 29px;
 }
@@ -19,10 +20,9 @@
 .altitudeBox{
 
     position: absolute;
-    width: 820px;
-    height: 460px;
-    left: 1000px;
-    top: 56px;
+    width: 42vw;
+    height: 42vh;
+    left: 48vw;
     background: #FFCBB0;
     border-radius: 29px;
     
@@ -30,20 +30,19 @@
 
 .locationBox{
     position: absolute;
-    width: 820px;
-    height: 460px;
-    left: 100px;
-    top: 564px;
+    width: 42vw;
+    height: 42vh;
+    top:  48vh;
     background: #FFCBB0;
     border-radius: 29px;
 }
 
 .temperatureBox{
     position: absolute;
-    width: 820px;
-    height: 460px;
-    left: 1000px;
-    top: 564px;
+    width: 42vw;
+    height: 42vh;
+    left: 48vw;
+    top: 48vh;
     background: #FFCBB0;
     border-radius: 29px;
 }
