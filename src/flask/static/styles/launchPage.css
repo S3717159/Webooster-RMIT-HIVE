@@ -8,6 +8,8 @@
 
 .centerWrapper{
     position: relative;
+    width: 90vw;
+    height: 90vh;
 }
 .accelerationBox{
     position: absolute;
@@ -22,7 +24,7 @@
     position: absolute;
     width: 42vw;
     height: 42vh;
-    left: 48vw;
+    left: 54%;
     background: #FFCBB0;
     border-radius: 29px;
     
@@ -32,7 +34,7 @@
     position: absolute;
     width: 42vw;
     height: 42vh;
-    top:  48vh;
+    top:54%;
     background: #FFCBB0;
     border-radius: 29px;
 }
@@ -41,14 +43,21 @@
     position: absolute;
     width: 42vw;
     height: 42vh;
-    left: 48vw;
-    top: 48vh;
+    left: 54%;
+    top: 54%;
     background: #FFCBB0;
     border-radius: 29px;
 }
 
 .middleCircle{
-
+    border-radius: 50%;
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFFFFF;
 }
 
 .headerCurve{
