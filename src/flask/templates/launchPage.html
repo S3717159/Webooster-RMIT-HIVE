@@ -10,15 +10,33 @@
     <body>
         <div class='centerDiv'>
             <div class='centerWrapper'>
-                <div class='accelerationBox'></div>
-                <div class='altitudeBox'></div>
-                <div class='locationBox'></div>
-                <div class='temperatureBox'></div>
+
+                <div class='accelerationBox'>
+                    <div class='accelerationHeader'>
+                        <h1 class='accelerationTextBox'>A</h1>
+                    </div>
+                </div>
+                <div class='altitudeBox'>
+                    <div class='altitudeHeader'>
+                        <h1 class='altitudeTextBox'>111111</h1>
+                    </div>
+                </div>
+                <div class='locationBox'>
+                    <div class='locationHeader'>
+                        <h1 class='locationTextBox'>A</h1>
+                    </div>
+                </div>
+                <div class='temperatureBox'>
+                    <div class='temperatureHeader'>
+                        <h1 class='temperatureTextBox'>B</h1>
+                    </div>
+                </div>
+
                 <div class='middleCircle'></div>
             </div>
             <div class='headerCurve'></div>
-
-
+            <image class='logo' src= "{{ url_for('static',filename='images/logo.png') }}"></image>
+            <image class='webooster' src= "{{ url_for('static',filename='images/webooster.png') }}"></image>
         </div>
     </body>
 

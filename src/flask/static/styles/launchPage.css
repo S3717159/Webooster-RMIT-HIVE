@@ -1,3 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Sarpanch&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Sarpanch&display=swap');
+
+.logo{
+    position: absolute;
+    width: 10.6vw;
+    height: auto;
+    top: 0.5%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+}
+
+.webooster{
+    position: absolute;
+    width: 3.6vw;
+    height: auto;
+    top: 0.5%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+}
 .centerDiv{
     position: absolute;
     width: 90vw;
@@ -62,11 +82,127 @@
 
 .headerCurve{
     position: absolute;
-    width: 31vw;
-    height: 11vh;
+    width: 21vw;
+    height: 15vh;
     left: 50%;
     top: 0.2vh;
     background: #FFFFFF;
     border-radius: 43px;
     transform: translate(-50%, -50%) perspective(200px) rotateX(150deg) ;    
+}
+
+.accelerationHeader{
+    position: absolute;
+    width: 100%;
+    height: 26%;
+    
+    background: #FF9300;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 29px 0px 0px 0px;
+}
+
+.altitudeHeader{
+    position: absolute;
+    width: 100%;
+    height: 26%;
+    
+    background: #FF9300;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 29px;
+}
+
+.locationHeader{
+    position: absolute;
+    width: 100%;
+    height: 26%;
+    
+    background: #FF9300;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 29px 0px 0px 0px;
+}
+
+.temperatureHeader{
+    position: absolute;
+    width: 100%;
+    height: 26%;
+    
+    background: #FF9300;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 29px;
+}
+
+.accelerationTextBox{
+    position: absolute;
+    width: 83%;
+    height: 100%; 
+    margin: 0px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 47px;
+    line-height: 63px;
+    
+    align-items: center;
+    text-align: center;
+    display: grid;
+    color: #000000;
+
+}
+
+.altitudeTextBox{
+    position: absolute;
+    left: 17%;
+    width: 83%;
+    height: 100%;
+    margin: 0px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 47px;
+    line-height: 63px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+
+}
+
+.locationTextBox{
+    position: absolute;
+    width: 78%;
+    height: 100%; 
+    margin: 0px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 47px;
+    line-height: 63px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+
+}
+
+.temperatureTextBox{
+    position: absolute;
+    left: 21%;
+    width: 79%;
+    height: 100%;
+    margin: 0px;
+    
+
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 47px;
+    line-height: 63px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+
 }
