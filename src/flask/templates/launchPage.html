@@ -3,6 +3,7 @@
 <html>
 
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/launchPage.css') }}">
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -13,30 +14,46 @@
 
                 <div class='accelerationBox'>
                     <div class='accelerationHeader'>
-                        <h1 class='accelerationTextBox'>A</h1>
+                        <h1 class='accelerationTextBox'>Acceleration</h1>
                     </div>
+                    <h1 class='acccelerationData'>10000 km/h</h1>
+                    <h1 class='accelerationChange'>-100%</h1>
+                    <image class='acceleration-icon' src= "{{ url_for('static',filename='images/speed-icon.png') }}"></image>
+
                 </div>
                 <div class='altitudeBox'>
                     <div class='altitudeHeader'>
-                        <h1 class='altitudeTextBox'>111111</h1>
+                        <h1 class='altitudeTextBox'>Altitude</h1>
                     </div>
+                    <h1 class='altitudeData'>10000 km/h</h1>
+                    <h1 class='altitudeChange'>-100%</h1>
+                    <image class='altitude-icon' src= "{{ url_for('static',filename='images/altitude-icon.png') }}"></image>
                 </div>
                 <div class='locationBox'>
                     <div class='locationHeader'>
-                        <h1 class='locationTextBox'>A</h1>
+                        <h1 class='locationTextBox'>Location</h1>
                     </div>
+                    <h1 class='locationLattitude'>-63572375290155</h1>
+                    <h1 class='locationLongitude'>106744840359415</h1>
+                    <image class='location-icon' src= "{{ url_for('static',filename='images/location-icon.png') }}"></image>
                 </div>
                 <div class='temperatureBox'>
                     <div class='temperatureHeader'>
-                        <h1 class='temperatureTextBox'>B</h1>
+                        <h1 class='temperatureTextBox'>Temperature</h1>
                     </div>
+                    <h1 class='temperatureData'>10000 km/h</h1>
+                    <h1 class='temperatureChange'>-100%</h1>
+                    <image class='temperature-icon' src= "{{ url_for('static',filename='images/temperature-icon.png') }}"></image>
                 </div>
 
                 <div class='middleCircle'></div>
+                <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_WKNlGw.json"  background="transparent"  speed="1"  style="border-radius: 50%;position:absolute; width: 20vw; height: 20vw;top:50%;left:50%;transform: translate(-50%, -50%);"  loop  autoplay></lottie-player>
+
             </div>
             <div class='headerCurve'></div>
             <image class='logo' src= "{{ url_for('static',filename='images/logo.png') }}"></image>
             <image class='webooster' src= "{{ url_for('static',filename='images/webooster.png') }}"></image>
+
         </div>
     </body>
 

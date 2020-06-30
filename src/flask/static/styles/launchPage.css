@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Sarpanch&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Sarpanch&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 .logo{
     position: absolute;
     width: 10.6vw;
@@ -18,6 +18,8 @@
     left: 56%;
     transform: translate(-50%, -50%);
 }
+
+
 .centerDiv{
     position: absolute;
     width: 90vw;
@@ -205,4 +207,202 @@
     text-decoration: none;
     color: #000000;
 
+}
+
+.acccelerationData{
+    position: absolute;
+    top:26%;
+    height: 37%;
+    width:78%;
+
+    margin: 0px;
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5vw;
+    line-height: 56px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+.accelerationChange{
+    position: absolute;
+    top:63%;
+    height: 37%;
+    width:78%;
+    margin: 0px;
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5vw;
+    line-height: 56px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    
+    color: #000000;
+}
+
+.acceleration-icon{
+    position: absolute;
+    width: 8vw;
+    height: 8vw;
+    top: 63%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+}
+
+
+.altitudeData{
+    position: absolute;
+    top:26%;
+    height: 37%;
+    width:78%;
+    left:21%;
+    margin: 0px;
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5vw;
+    line-height: 56px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+.altitudeChange{
+    position: absolute;
+    top:63%;
+    height: 37%;
+    width:78%;
+    margin: 0px;
+    left:21%;
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5vw;
+    line-height: 56px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    
+    color: #000000;
+}
+
+.altitude-icon{
+    position: absolute;
+    width: 8vw;
+    height: 8vw;
+    top: 63%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+}
+
+
+.temperatureData{
+    position: absolute;
+    top:26%;
+    height: 37%;
+    width:78%;
+    left:21%;
+    margin: 0px;
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5vw;
+    line-height: 56px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+.temperatureChange{
+    position: absolute;
+    top:63%;
+    height: 37%;
+    width:78%;
+    margin: 0px;
+    left:21%;
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5vw;
+    line-height: 56px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    
+    color: #000000;
+}
+
+.temperature-icon{
+    position: absolute;
+    width: 8vw;
+    height: 8vw;
+    top: 63%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.locationLattitude{
+    position: absolute;
+    top:26%;
+    height: 37%;
+    width:78%;
+
+    margin: 0px;
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5vw;
+    line-height: 56px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+.locationLongitude{
+    position: absolute;
+    top:63%;
+    height: 37%;
+    width:78%;
+    margin: 0px;
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5vw;
+    line-height: 56px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    
+    color: #000000;
+}
+
+.location-icon{
+    position: absolute;
+    width: 8vw;
+    height: 8vw;
+    top: 63%;
+    left: 77%;
+    transform: translate(-50%, -50%);
 }
