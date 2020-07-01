@@ -110,7 +110,7 @@
     
     background: #FF9300;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 0px 29px;
+    border-radius: 0px 29px 0px 0px;
 }
 
 .locationHeader{
@@ -141,7 +141,7 @@
     font-family: Playfair Display;
     font-style: normal;
     font-weight: normal;
-    font-size: 47px;
+    font-size: 3vw;
     line-height: 63px;
     
     align-items: center;
@@ -160,7 +160,7 @@
     font-family: Playfair Display;
     font-style: normal;
     font-weight: normal;
-    font-size: 47px;
+    font-size: 3vw;
     line-height: 63px;
     display: grid;
     align-items: center;
@@ -178,7 +178,7 @@
     font-family: Playfair Display;
     font-style: normal;
     font-weight: normal;
-    font-size: 47px;
+    font-size: 3vw;
     line-height: 63px;
     display: grid;
     align-items: center;
@@ -199,7 +199,7 @@
     font-family: Playfair Display;
     font-style: normal;
     font-weight: normal;
-    font-size: 47px;
+    font-size: 3vw;
     line-height: 63px;
     display: grid;
     align-items: center;
@@ -405,4 +405,13 @@
     top: 63%;
     left: 77%;
     transform: translate(-50%, -50%);
+}
+
+#welcome-wrapper {
+    position: relative;
+}
+
+#welcome-wrapper p {
+    position: absolute;
+    top: 10em;
 }
