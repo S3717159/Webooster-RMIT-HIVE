@@ -11,7 +11,11 @@
     <body>
         <div class="container-fluid">
             <div class="row header">
-                <div class="col-12">Header</div>
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    <div class='headerCurve'></div>
+                    <image class='logo' src= "{{ url_for('static',filename='images/logo.png') }}"></image>
+                    <image class='webooster' src= "{{ url_for('static',filename='images/webooster.png') }}"></image>
+                </div>
             </div>
             <div class="row" >
                 <div class="col-5 box rightcol ">
@@ -37,9 +41,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 "></div>
-            </div>
+            <div class='middleCircle'></div>
             <div class="row">
                 <div class="col-5 box rightcol" >
                     <div class="row" style='height: 26%;'>

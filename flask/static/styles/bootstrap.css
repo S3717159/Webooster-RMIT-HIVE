@@ -39,19 +39,22 @@
     align-items: center;
   }
 .logo{
+    z-index : 2;
+
     position: absolute;
     width: 10.6vw;
     height: auto;
-    top: 0.5%;
+    top: 46.5%;
     left: 48%;
     transform: translate(-50%, -50%);
 }
 
 .webooster{
+    z-index : 2;
     position: absolute;
     width: 3.6vw;
     height: auto;
-    top: 0.5%;
+    top: 46.5%;
     left: 56%;
     transform: translate(-50%, -50%);
 }
@@ -110,6 +113,7 @@
 }
 
 .middleCircle{
+    z-index: 1;
     border-radius: 50%;
     position: absolute;
     width: 25vw;
@@ -121,14 +125,12 @@
 }
 
 .headerCurve{
-    position: absolute;
+    z-index : 1;
     width: 21vw;
     height: 15vh;
-    left: 50%;
-    top: 0.2vh;
-    background: #FFFFFF;
+    background: white;
     border-radius: 43px;
-    transform: translate(-50%, -50%) perspective(200px) rotateX(150deg) ;    
+    transform:perspective(200px) rotateX(150deg) ;    
 }
 
 .accelerationHeader{
