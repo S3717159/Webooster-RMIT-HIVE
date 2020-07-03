@@ -6,8 +6,38 @@
     height: 42vh;
     background: #FFCBB0;
     border-radius: 29px;
+    margin-bottom: 6vh;
 }
 
+.leftcol{
+    margin-left: 3vw;
+    margin-right: 5vw;
+}
+.rightcol {
+    margin-left: 5vw;
+    margin-right: 3vw;
+}
+
+.header{
+    height: 5vh;
+
+}
+
+.dataText{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5vw;
+    color: #000000;
+}
+
+.vertical-center {
+    min-height: 100%; 
+    min-height: 100vh; 
+  
+    display: flex;
+    align-items: center;
+  }
 .logo{
     position: absolute;
     width: 10.6vw;
@@ -76,6 +106,7 @@
     top: 54%;
     background: #FFCBB0;
     border-radius: 29px;
+    
 }
 
 .middleCircle{
@@ -101,43 +132,63 @@
 }
 
 .accelerationHeader{
-    position: absolute;
     width: 100%;
-    height: 26%;
+    height: 100%;
     
     background: #FF9300;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 29px 0px 0px 0px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3vw;
+    text-decoration: none;
+    color: #000000;
 }
 
 .altitudeHeader{
-    position: absolute;
     width: 100%;
-    height: 26%;
+    height: 100%;
     
     background: #FF9300;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 0px 29px 0px 0px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3vw;
+    text-decoration: none;
+    color: #000000;
 }
 
 .locationHeader{
-    position: absolute;
     width: 100%;
-    height: 26%;
+    height: 100%;
     
     background: #FF9300;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 29px 0px 0px 0px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3vw;
+    text-decoration: none;
+    color: #000000;
 }
 
 .temperatureHeader{
-    position: absolute;
     width: 100%;
-    height: 26%;
+    height: 100%;
     
     background: #FF9300;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 0px 29px;
+    border-radius: 0px 29px 0px 0px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3vw;
+    text-decoration: none;
+    color: #000000;
 }
 
 .accelerationTextBox{
@@ -228,11 +279,6 @@
     font-style: normal;
     font-weight: normal;
     font-size: 2.5vw;
-    line-height: 56px;
-    display: grid;
-    align-items: center;
-    text-align: center;
-
     color: #000000;
 }
 

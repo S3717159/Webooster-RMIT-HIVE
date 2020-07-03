@@ -5,10 +5,13 @@ app = Flask(__name__)
 app.secret_key="webooster"
 
 
-@app.route('/')
+@app.route('/main')
 def mainPage():
     return render_template('launchPage.html')
 
+@app.route('/')
+def boot():
+    return render_template('bootstrap.html')
 
 
 
