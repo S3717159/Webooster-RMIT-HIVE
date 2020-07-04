@@ -6,7 +6,7 @@
     height: 42vh;
     background: #FFCBB0;
     border-radius: 29px;
-    margin-bottom: 6vh;
+    
 }
 
 .leftcol{
@@ -114,13 +114,11 @@
 
 .middleCircle{
     z-index: 1;
-    border-radius: 50%;
     position: absolute;
     width: 25vw;
     height: 25vw;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    border-radius: 50%;
+
     background: #FFFFFF;
 }
 
@@ -409,7 +407,7 @@
     width: 8vw;
     height: 8vw;
     top: 63%;
-    left: 27%;
+    left: 21%;
     transform: translate(-50%, -50%);
 }
 
