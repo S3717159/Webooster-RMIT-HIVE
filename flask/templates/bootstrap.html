@@ -3,13 +3,16 @@
 <html>
 
     <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/bootstrap.css') }}">
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     </head>
-    <body>
+    <body onload="requestData">
+        <button onclick="requestData()">A</button>
         <div class="container-fluid">
 
             <!-- Header  -->
@@ -32,7 +35,7 @@
                         </div>
                     </div>
                     <div class="row" style='height: 30%;'>
-                        <div class="col-10 dataText d-flex align-items-center justify-content-center">1000 m/s <sup>2</sup></div>
+                        <div class="col-10 dataText  d-flex align-items-center justify-content-center"><t class='acceleration'> 1000</t><t>  &nbsp m/s </t> <sup>2</sup></div>
                     </div>
                     <div class="row" style='height: 14%;'>
                         <div class="col-10 d-flex align-items-center justify-content-center">
@@ -56,7 +59,7 @@
                     </div>
                     <div class="row" style='height: 30%;'>
                         <div class='col-2' style='margin-left: 0px;margin-right:0px ;padding: 0px;'></div>
-                        <div class="col-10 dataText d-flex align-items-center justify-content-center">10000 m</div>
+                        <div class="col-10 dataText d-flex align-items-center justify-content-center"><t class='altitude'> 1000</t><t>  &nbsp m </t></div>
                     </div>
                     <div class="row" style='height: 14%;'>
                         <div class='col-2' style='margin-left: 0px;margin-right:0px ;padding: 0px;'></div>
@@ -118,7 +121,7 @@
                     </div>
                     <div class="row" style='height: 30%;'>
                         <div class='col-2' style='margin-left: 0px;margin-right:0px ;padding: 0px;'></div>
-                        <div class="col-10 dataText d-flex align-items-center justify-content-center">500 &#8451 </div>
+                        <div class="col-10 dataText d-flex align-items-center justify-content-center"><t class='temperature'> 0 </t> <t>  &nbsp &#8451 </t> </div>
                     </div>
                     <div class="row" style='height: 14%;'>
                         <div class='col-2' style='margin-left: 0px;margin-right:0px ;padding: 0px;'></div>
@@ -142,6 +145,38 @@
         loop  autoplay></lottie-player> -->
         
     </body>
+
+
+    <script>
+        function requestData()
+        {
+            // Ajax call to get the Data from Flask
+            var requests = $.get('/data');
+
+            var tm = requests.done(function (result)
+            {
+                console.log(result)
+                $(".acceleration").text("");
+                $(".acceleration").text(Math.round(result['acceleration']));
+
+                $(".altitude").text("");
+                $(".altitude").text(Math.round(result['altitude']));
+
+                $(".temperature").text("");
+                $(".temperature").text(Math.round(result['temperature']));
+
+                $(".acceleration").text("");
+                $(".acceleration").text(Math.round(result['acceleration']));
+
+                $(".acceleration").text("");
+                $(".acceleration").text(Math.round(result['acceleration']));
+                // call it again after one second
+                setTimeout(requestData, 2000);
+
+            });
+        }
+
+    </script>
 
 
     

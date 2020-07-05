@@ -1,5 +1,7 @@
 from flask import Flask
-from flask import Flask , redirect , url_for, render_template , request, session, flash, jsonify
+from flask import Flask , redirect , url_for, render_template , request, session, flash, jsonify,make_response
+import json
+import random
 app = Flask(__name__)
 
 app.secret_key="webooster"
@@ -30,7 +32,16 @@ def mainPage():
 def boot():
     return render_template('bootstrap.html')
 
+@app.route('/data', methods=["GET", "POST"])
+def data():
+    x = random.randint(0,13)
+    print(x)
+    data = mockData[x]
+    response = make_response(json.dumps(data))
 
+    response.content_type = 'application/json'
+
+    return response
 
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 if app == "__main__":
