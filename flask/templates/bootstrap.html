@@ -11,6 +11,8 @@
     </head>
     <body>
         <div class="container-fluid">
+
+            <!-- Header  -->
             <div class="row header">
                 <div class="col-12 d-flex align-items-center justify-content-center">
                     <div class='headerCurve'></div>
@@ -18,6 +20,8 @@
                     <image class='webooster' src= "{{ url_for('static',filename='images/webooster.png') }}"></image>
                 </div>
             </div>
+
+            <!-- Acceleration Box -->
             <div class="row" >
                 <div class="col-5 box rightcol ">
                     <div class="row " style='height: 26%;'>
@@ -28,7 +32,7 @@
                         </div>
                     </div>
                     <div class="row" style='height: 30%;'>
-                        <div class="col-10 dataText d-flex align-items-center justify-content-center">100000</div>
+                        <div class="col-10 dataText d-flex align-items-center justify-content-center">1000 m/s <sup>2</sup></div>
                     </div>
                     <div class="row" style='height: 14%;'>
                         <div class="col-10 d-flex align-items-center justify-content-center">
@@ -37,10 +41,11 @@
                         <image class='acceleration-icon' src= "{{ url_for('static',filename='images/speed-icon.png') }}"></image>
                     </div>
                     <div class="row" style='height: 30%;'>
-                        <div class="col-10 dataText d-flex align-items-center justify-content-center">100000</div>  
+                        <div class="col-10 dataText d-flex align-items-center justify-content-center">+ 10.52 %</div>  
                     </div>
                 </div>
                 
+                <!-- Altitude Box -->
                 <div class="col-5 box leftcol">
                     <div class="row" style='height: 26%;'>
                         <div class="col-12 altitudeHeader d-flex align-items-center justify-content-center">
@@ -50,27 +55,36 @@
                         </div>
                     </div>
                     <div class="row" style='height: 30%;'>
-                        <div class='col-2' style='width: 100%;'></div>
-                        <div class="col-10 dataText d-flex align-items-center justify-content-center">100000</div>
+                        <div class='col-2' style='margin-left: 0px;margin-right:0px ;padding: 0px;'></div>
+                        <div class="col-10 dataText d-flex align-items-center justify-content-center">10000 m</div>
                     </div>
                     <div class="row" style='height: 14%;'>
-                        <div class='col-2'></div>
+                        <div class='col-2' style='margin-left: 0px;margin-right:0px ;padding: 0px;'></div>
                         <div class="col-10 d-flex align-items-center justify-content-center">
-                            <image class='increase-icon' src= "{{ url_for('static',filename='images/increase.png') }}"></image>
+                            <image class='increase-icon' src= "{{ url_for('static',filename='images/decrease.png') }}"></image>
                         </div>
                         <image class='altitude-icon' src= "{{ url_for('static',filename='images/altitude-icon.png') }}"></image>
                     </div>
                     <div class="row" style='height: 30%;'>
-                        <div class='col-2'></div>
-                        <div class="col-10 dataText d-flex align-items-center justify-content-center">100000</div>  
+                        <div class='col-2' style='margin-left: 0px;margin-right:0px ;padding: 0px;'></div>
+                        <div class="col-10 dataText d-flex align-items-center justify-content-center">- 12.23 %</div>  
                     </div>
                 </div>
             </div>
+
+            <!-- Middle Circle  -->
             <div class='row'>
                 <div class='col-12   d-flex align-items-center justify-content-center'>a
-                    <div class='middleCircle'></div>
+                    <div class='middleCircle'>
+                        <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_WKNlGw.json"  
+                        background="transparent"  speed="1"  
+                        style="z-index: 3;;border-radius: 50%;position:absolute; width: 20vw; height: 20vw;top:50%;left:50%;transform: translate(-50%, -50%);"  
+                        loop  autoplay></lottie-player>
+                    </div>
                 </div>
             </div>
+
+            <!-- Location Box -->
             <div class="row">
                 <div class="col-5 box rightcol" >
                     <div class="row" style='height: 26%;'>
@@ -85,9 +99,6 @@
 
                     </div>
                     <div class="row" style='height: 14%;'>
-                        <div class="col-10 d-flex align-items-center justify-content-center">
-                            <image class='increase-icon' src= "{{ url_for('static',filename='images/increase.png') }}"></image>
-                        </div>
                         <image class='location-icon' src= "{{ url_for('static',filename='images/location-icon.png') }}"></image>
                     </div>
                     <div class="row" style='height: 30%;'>
@@ -95,6 +106,8 @@
                     </div>
                 </div>
 
+
+                <!-- Temperature Box -->
                 <div class="col-5  box leftcol">
                     <div class="row" style='height: 26%;'>
                         <div class="col-12 temperatureHeader d-flex align-items-center justify-content-center">
@@ -104,19 +117,19 @@
                         </div>
                     </div>
                     <div class="row" style='height: 30%;'>
-                        <div class='col-2'></div>
-                        <div class="col-10 dataText d-flex align-items-center justify-content-center">100000</div>
+                        <div class='col-2' style='margin-left: 0px;margin-right:0px ;padding: 0px;'></div>
+                        <div class="col-10 dataText d-flex align-items-center justify-content-center">500 &#8451 </div>
                     </div>
                     <div class="row" style='height: 14%;'>
-                        <div class='col-2'></div>
+                        <div class='col-2' style='margin-left: 0px;margin-right:0px ;padding: 0px;'></div>
                         <div class="col-10 d-flex align-items-center justify-content-center">
                             <image class='increase-icon' src= "{{ url_for('static',filename='images/increase.png') }}"></image>
                         </div>
                         <image class='temperature-icon' src= "{{ url_for('static',filename='images/temperature-icon.png') }}"></image>
                     </div>
                     <div class="row" style='height: 30%;'>
-                        <div class='col-2'></div>
-                        <div class="col-10 dataText d-flex align-items-center justify-content-center">100000</div>  
+                        <div class='col-2' style='margin-left: 0px;margin-right:0px ;padding: 0px;'></div>
+                        <div class="col-10 dataText d-flex align-items-center justify-content-center">+ 53.12 %</div>  
                     </div>
                 </div>
                 </div>
