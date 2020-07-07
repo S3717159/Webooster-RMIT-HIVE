@@ -162,11 +162,11 @@
 
                 if(result['accelerationChange'] < 0){
                     document.getElementById("accelerationDifference").src = "{{ url_for('static',filename='images/decrease.png') }}";
-                    document.getElementById("acceleration").style.color = 'red';
+                    document.getElementById("acceleration").style.color = '#972D00';
                 }
                 else{
                     document.getElementById("accelerationDifference").src = "{{ url_for('static',filename='images/increase.png') }}";
-                    document.getElementById("acceleration").style.color = 'green';
+                    document.getElementById("acceleration").style.color = '#258E00';
 
                 }
                 
@@ -179,11 +179,11 @@
 
                 if(result['altitudeChange'] < 0){
                     document.getElementById("altitudeDifference").src = "{{ url_for('static',filename='images/decrease.png') }}";
-                    document.getElementById("altitude").style.color = 'red';
+                    document.getElementById("altitude").style.color = '#972D00';
                 }
                 else{
                     document.getElementById("altitudeDifference").src = "{{ url_for('static',filename='images/increase.png') }}";
-                    document.getElementById("altitude").style.color = 'green';
+                    document.getElementById("altitude").style.color = '#258E00';
                 }
                 
 
@@ -194,12 +194,12 @@
 
                 if(result['temperatureChange'] < 0){
                     document.getElementById("temperatureDifference").src = "{{ url_for('static',filename='images/decrease.png') }}";
-                    document.getElementById("temperature").style.color = 'red';
+                    document.getElementById("temperature").style.color = '#972D00';
 
                 }
                 else{
                     document.getElementById("temperatureDifference").src = "{{ url_for('static',filename='images/increase.png') }}";
-                    document.getElementById("temperature").style.color = 'green';
+                    document.getElementById("temperature").style.color = '#258E00';
 
                 }
                 
