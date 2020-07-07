@@ -11,8 +11,7 @@
         <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/bootstrap.css') }}">
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     </head>
-    <body onload="requestData">
-        <button onclick="requestData()">A</button>
+    <body onload="requestData()">
         <div class="container-fluid">
 
             <!-- Header  -->
@@ -44,7 +43,7 @@
                         <image class='acceleration-icon' src= "{{ url_for('static',filename='images/speed-icon.png') }}"></image>
                     </div>
                     <div class="row" style='height: 30%;'>
-                        <div class="col-10 dataText d-flex align-items-center justify-content-center">+ 10.52 %</div>  
+                        <div class="col-10 accelerationChange dataText d-flex align-items-center justify-content-center"></div>  
                     </div>
                 </div>
                 
@@ -70,7 +69,7 @@
                     </div>
                     <div class="row" style='height: 30%;'>
                         <div class='col-2' style='margin-left: 0px;margin-right:0px ;padding: 0px;'></div>
-                        <div class="col-10 dataText d-flex align-items-center justify-content-center">- 12.23 %</div>  
+                        <div class="col-10 altitudeChange  dataText d-flex align-items-center justify-content-center"></div>  
                     </div>
                 </div>
             </div>
@@ -132,7 +131,7 @@
                     </div>
                     <div class="row" style='height: 30%;'>
                         <div class='col-2' style='margin-left: 0px;margin-right:0px ;padding: 0px;'></div>
-                        <div class="col-10 dataText d-flex align-items-center justify-content-center">+ 53.12 %</div>  
+                        <div class="col-10 temperatureChange dataText d-flex align-items-center justify-content-center"></div>  
                     </div>
                 </div>
                 </div>
@@ -157,21 +156,27 @@
             {
                 console.log(result)
                 $(".acceleration").text("");
-                $(".acceleration").text(Math.round(result['acceleration']));
+                $(".acceleration").text((result['acceleration']));
+                $(".accelerationChange").text("");
+                $(".accelerationChange").text((result['accelerationChange']) + ' %');
 
                 $(".altitude").text("");
-                $(".altitude").text(Math.round(result['altitude']));
+                $(".altitude").text((result['altitude']));
+                $(".altitudeChange").text("");
+                $(".altitudeChange").text((result['altitudeChange']) + ' %');
 
                 $(".temperature").text("");
-                $(".temperature").text(Math.round(result['temperature']));
+                $(".temperature").text((result['temperature']));
+                $(".temperatureChange").text("");
+                $(".temperatureChange").text((result['temperatureChange']) + ' %') ;
 
-                $(".acceleration").text("");
-                $(".acceleration").text(Math.round(result['acceleration']));
+                $(".longitude").text("");
+                $(".longitude").text((result['longitude']));
 
-                $(".acceleration").text("");
-                $(".acceleration").text(Math.round(result['acceleration']));
+                $(".latitude").text("");
+                $(".latitude").text((result['latitude']));
                 // call it again after one second
-                setTimeout(requestData, 2000);
+                setTimeout(requestData, 1000);
 
             });
         }
