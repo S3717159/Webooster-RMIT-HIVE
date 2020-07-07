@@ -38,12 +38,12 @@
                     </div>
                     <div class="row" style='height: 14%;'>
                         <div class="col-10 d-flex align-items-center justify-content-center">
-                            <image class='increase-icon' src= "{{ url_for('static',filename='images/increase.png') }}"></image>
+                            <image id='accelerationDifference' class='increase-icon' src= "{{ url_for('static',filename='images/increase.png') }}"></image>
                         </div>
                         <image class='acceleration-icon' src= "{{ url_for('static',filename='images/speed-icon.png') }}"></image>
                     </div>
                     <div class="row" style='height: 30%;'>
-                        <div class="col-10 accelerationChange dataText d-flex align-items-center justify-content-center"></div>  
+                        <div id='acceleration' class="col-10 accelerationChange dataText d-flex align-items-center justify-content-center"></div>  
                     </div>
                 </div>
                 
@@ -63,13 +63,13 @@
                     <div class="row" style='height: 14%;'>
                         <div class='col-2' style='margin-left: 0px;margin-right:0px ;padding: 0px;'></div>
                         <div class="col-10 d-flex align-items-center justify-content-center">
-                            <image class='increase-icon' src= "{{ url_for('static',filename='images/decrease.png') }}"></image>
+                            <image id='altitudeDifference' class='increase-icon' src= "{{ url_for('static',filename='images/decrease.png') }}"></image>
                         </div>
                         <image class='altitude-icon' src= "{{ url_for('static',filename='images/altitude-icon.png') }}"></image>
                     </div>
                     <div class="row" style='height: 30%;'>
                         <div class='col-2' style='margin-left: 0px;margin-right:0px ;padding: 0px;'></div>
-                        <div class="col-10 altitudeChange  dataText d-flex align-items-center justify-content-center"></div>  
+                        <div id='altitude' class="col-10 altitudeChange  dataText d-flex align-items-center justify-content-center"></div>  
                     </div>
                 </div>
             </div>
@@ -125,13 +125,13 @@
                     <div class="row" style='height: 14%;'>
                         <div class='col-2' style='margin-left: 0px;margin-right:0px ;padding: 0px;'></div>
                         <div class="col-10 d-flex align-items-center justify-content-center">
-                            <image class='increase-icon' src= "{{ url_for('static',filename='images/increase.png') }}"></image>
+                            <image id='temperatureDifference' class='increase-icon' src= "{{ url_for('static',filename='images/increase.png') }}"></image>
                         </div>
                         <image class='temperature-icon' src= "{{ url_for('static',filename='images/temperature-icon.png') }}"></image>
                     </div>
                     <div class="row" style='height: 30%;'>
                         <div class='col-2' style='margin-left: 0px;margin-right:0px ;padding: 0px;'></div>
-                        <div class="col-10 temperatureChange dataText d-flex align-items-center justify-content-center"></div>  
+                        <div id='temperature' class="col-10 temperatureChange dataText d-flex align-items-center justify-content-center"></div>  
                     </div>
                 </div>
                 </div>
@@ -158,17 +158,51 @@
                 $(".acceleration").text("");
                 $(".acceleration").text((result['acceleration']));
                 $(".accelerationChange").text("");
-                $(".accelerationChange").text((result['accelerationChange']) + ' %');
+                $(".accelerationChange").text((result['accelerationChange']) + '\u00A0 %');
 
+                if(result['accelerationChange'] < 0){
+                    document.getElementById("accelerationDifference").src = "{{ url_for('static',filename='images/decrease.png') }}";
+                    document.getElementById("acceleration").style.color = 'red';
+                }
+                else{
+                    document.getElementById("accelerationDifference").src = "{{ url_for('static',filename='images/increase.png') }}";
+                    document.getElementById("acceleration").style.color = 'green';
+
+                }
+                
+
+                
                 $(".altitude").text("");
                 $(".altitude").text((result['altitude']));
                 $(".altitudeChange").text("");
-                $(".altitudeChange").text((result['altitudeChange']) + ' %');
+                $(".altitudeChange").text((result['altitudeChange']) + '\u00A0 %');
+
+                if(result['altitudeChange'] < 0){
+                    document.getElementById("altitudeDifference").src = "{{ url_for('static',filename='images/decrease.png') }}";
+                    document.getElementById("altitude").style.color = 'red';
+                }
+                else{
+                    document.getElementById("altitudeDifference").src = "{{ url_for('static',filename='images/increase.png') }}";
+                    document.getElementById("altitude").style.color = 'green';
+                }
+                
 
                 $(".temperature").text("");
                 $(".temperature").text((result['temperature']));
                 $(".temperatureChange").text("");
-                $(".temperatureChange").text((result['temperatureChange']) + ' %') ;
+                $(".temperatureChange").text((result['temperatureChange']) + '\u00A0 %') ;
+
+                if(result['temperatureChange'] < 0){
+                    document.getElementById("temperatureDifference").src = "{{ url_for('static',filename='images/decrease.png') }}";
+                    document.getElementById("temperature").style.color = 'red';
+
+                }
+                else{
+                    document.getElementById("temperatureDifference").src = "{{ url_for('static',filename='images/increase.png') }}";
+                    document.getElementById("temperature").style.color = 'green';
+
+                }
+                
 
                 $(".longitude").text("");
                 $(".longitude").text((result['longitude']));
